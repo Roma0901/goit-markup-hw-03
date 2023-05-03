@@ -19,14 +19,21 @@ button {
 .menu-link {
   color: #2e2f42;
 }
-.menu-link:hover,
-.addres-link:hover {
-  color: var(--accent-color);
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.menu-link:focus,
-.addres-link:focus {
-  color: var(--accent-color);
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
+/* ============================================HEADER======================================== */
 /* LOGO */
 
 .logo {
@@ -38,8 +45,10 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
+  width: 44px;
 }
 .logo-second-part {
+  width: 71px;
   color: #2e2f42;
 }
 /* NAVIGATION */
@@ -49,6 +58,14 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+.menu-link:hover,
+.addres-link:hover {
+  color: var(--accent-color);
+}
+.menu-link:focus,
+.addres-link:focus {
+  color: var(--accent-color);
 }
 /* ADDRES */
 .addres-list {
@@ -61,9 +78,39 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.logo-container {
+  margin-right: 76px;
+}
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+.mail {
+  margin-right: 40px;
+}
+/* ============================================/HEADER======================================== */
+/* ============================================MAIN======================================== */
 /* HERO SECTION */
 .hero {
   background-color: #2e2f42;
+  text-align: center;
+  display: flex;
 }
 .title {
   font-weight: 700;
@@ -72,6 +119,8 @@ button {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
+  width: 496px;
+  height: 120px;
 }
 .hero-btn {
   font-weight: 500;
@@ -127,6 +176,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* ============================================/MAIN======================================== */
 /* FOOTER */
 .footer {
   background-color: #2e2f42;
@@ -168,4 +218,12 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+/* ---------------------------------------------disposition--------------------------------------------- */
+.container {
+  width: 1188px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
