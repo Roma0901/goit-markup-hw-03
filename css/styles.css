@@ -33,6 +33,9 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
+img {
+  display: block;
+}
 /* ============================================HEADER======================================== */
 /* LOGO */
 
@@ -45,10 +48,8 @@ ol {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
-  width: 44px;
 }
 .logo-second-part {
-  width: 71px;
   color: #2e2f42;
 }
 /* NAVIGATION */
@@ -81,6 +82,7 @@ ol {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
@@ -90,24 +92,22 @@ ol {
 .navigation {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 .menu {
   display: flex;
   align-items: center;
 }
-.logo-container {
-  margin-right: 76px;
-}
+
 .menu-item:not(:last-child) {
   margin-right: 40px;
 }
-.mail {
-  margin-right: 40px;
-}
+
 .section {
   padding-bottom: 120px;
   padding-top: 120px;
 }
+
 /* ============================================/HEADER======================================== */
 /* ============================================MAIN======================================== */
 /* HERO SECTION */
@@ -259,7 +259,7 @@ ol {
 }
 /* ---------------------------------------------disposition--------------------------------------------- */
 .container {
-  width: 1188px;
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
