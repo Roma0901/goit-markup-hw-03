@@ -104,6 +104,10 @@ ol {
 .mail {
   margin-right: 40px;
 }
+.section {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
 /* ============================================/HEADER======================================== */
 /* ============================================MAIN======================================== */
 /* HERO SECTION */
@@ -111,6 +115,8 @@ ol {
   background-color: #2e2f42;
   text-align: center;
   display: flex;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .title {
   font-weight: 700;
@@ -120,15 +126,20 @@ ol {
   letter-spacing: 0.02em;
   color: #ffffff;
   width: 496px;
-  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 .hero-btn {
+  min-width: 169px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -146,6 +157,11 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 8px;
+}
+.features-list {
+  display: flex;
+  justify-content: space-between;
 }
 /* WHAT ARE WE DOING */
 .subtitle {
@@ -156,6 +172,14 @@ ol {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+.wawd-list {
+  display: flex;
+  gap: 24px;
+}
+.wawd-item {
+  flex-basis: (100%-84px)/3;
 }
 /* OUR TEAM */
 .our-team {
@@ -176,8 +200,15 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.employees-list {
+  display: flex;
+  gap: 24px;
+}
+.employees-card {
+  flex-basis: (100%-96px)/4;
+}
 /* ============================================/MAIN======================================== */
-/* FOOTER */
+/* ============================================FOOTER======================================== */
 .footer {
   background-color: #2e2f42;
 }
@@ -186,10 +217,17 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
+  margin-top: 17.5px;
 }
 .logo-second-part-white {
   color: #f4f4fd;
 }
+.footer-conrainer {
+  display: flex;
+}
+
+/* ============================================/FOOTER======================================== */
 /* ---------------------------------------------PORTFOLIO --------------------------------------------- */
 /* BUTTONS */
 .button-body {
