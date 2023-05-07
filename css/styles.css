@@ -97,10 +97,10 @@ img {
 .menu {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
-
-.menu-item:not(:last-child) {
-  margin-right: 40px;
+.logo-container {
+  margin-right: 76px;
 }
 
 .section {
@@ -125,12 +125,16 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
 }
 .hero-btn {
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   min-width: 169px;
   font-weight: 500;
   font-size: 16px;
@@ -152,18 +156,25 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  width: calc((100% - 72px) / 4);
+  margin-bottom: 8px;
 }
 .description {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 8px;
 }
 .features-list {
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
+}
+.features-container {
+  padding: 120px 0px;
 }
 /* WHAT ARE WE DOING */
+.wawd-container {
+  padding-bottom: 120px;
+}
 .subtitle {
   font-weight: 700;
   font-size: 36px;
@@ -187,6 +198,7 @@ img {
 }
 .images-team {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 .name-teammate {
   font-weight: 500;
@@ -194,11 +206,14 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
 }
 .place {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 .employees-list {
   display: flex;
@@ -207,29 +222,41 @@ img {
 .employees-card {
   flex-basis: (100%-96px)/4;
 }
+.employees-card-description {
+  padding: 32px 16px;
+}
 /* ============================================/MAIN======================================== */
 /* ============================================FOOTER======================================== */
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0px;
 }
 .footer-text {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  width: 264px;
-  margin-top: 17.5px;
+  max-width: 264px;
 }
 .logo-second-part-white {
   color: #f4f4fd;
 }
-.footer-conrainer {
-  display: flex;
+.footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
-
 /* ============================================/FOOTER======================================== */
 /* ---------------------------------------------PORTFOLIO --------------------------------------------- */
 /* BUTTONS */
+.section-portfolio {
+  padding: 96px 0 120px;
+}
+.button-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
 .button-body {
   background-color: #f4f4fd;
   font-weight: 500;
@@ -237,25 +264,44 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #4d5ae5;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .button-body:hover,
 .button-body:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  border: 1px solid transparent;
 }
 /* PICTURES */
+.pic-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.pic-link {
+  width: calc((100% - 48px) / 3);
+}
 .pic-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .pic-description {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+.pic-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 /* ---------------------------------------------disposition--------------------------------------------- */
 .container {
